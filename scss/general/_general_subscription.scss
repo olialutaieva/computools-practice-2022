@@ -1,0 +1,46 @@
+@import "../mixins";
+@import "../variables";
+
+.subsription {
+	height: 200px;
+	background: $light-green;
+}
+.subsription-content {
+    @include flex-display(flex, row, flex-start);
+    justify-content: space-between;
+	padding: 45px 0px;
+	width: 1000px;
+}
+.subsription-row {
+    @include flex-display(flex, column, flex-start);
+	width: 394px;
+}
+
+#fname {
+    @include flex-display(flex, row, center);
+	padding: 4px 12px 4px 16px;
+    @include size(499px, 56px);
+	background: $white;
+	border-width: 1px 0px 1px 1px;
+	border-style: solid;
+	border-color: $dark-green;
+	border-radius: 32px;
+    @include font-size(500, 20px, 160%);
+	color: $dark-green;
+}
+#subsription-btn {
+    @include flex-display(flex, row, center);
+	justify-content: center;
+	padding: 12px 16px;
+    @include size(142px, 56px);
+	background: $dark-green;
+	border-radius: 32px;
+    @include font-size(600, 20px, 24px);
+	color: $light-green;
+	margin: 0px -142px;
+}
+.input-row {
+	box-sizing: border-box;
+    @include flex-display(flex, row, center);
+	padding: 4px 12px 4px 16px;
+}

@@ -1,0 +1,57 @@
+@import "../mixins";
+@import "../variables";
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+}
+
+h1 {
+    @include font-size(700, 64px, 124%);
+}
+
+h2 {
+    @include font-size(700, 36px, 120%);
+}
+
+h3 {
+	width: 780px;
+    @include font-size(600, 32px, 120%);
+}
+
+h4 {
+    @include font-size(700, 24px, 124%);
+}
+
+p {
+    @include font-size(500, 20px, 160%);
+}
+
+.main-btn {
+	color: $dark-green;
+	background: $light-green;
+    @include flex-display(flex, row, center);
+    justify-content: center;
+	padding: 12px 48px;
+    @include size(220px, 56px);
+	border-radius: 32px;
+    @include font-size(700, 20px, 24px);
+}
+
+.scnd-btn {
+    @include flex-display(flex, row, center);
+    justify-content: center;
+	padding: 15px 13px;
+    @include size(220px, 56px);
+	border: 1px solid $dark-green;
+	border-radius: 32px;
+    @include font-size(700, 20px, 24px);
+	color: $dark-green;
+	background-color: transparent;
+}

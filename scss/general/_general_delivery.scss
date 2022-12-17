@@ -1,0 +1,17 @@
+@import "../mixins";
+@import "../variables";
+
+.delivery {
+    @include flex-display(flex, column, flex-start);
+	padding: 36px 0px;
+}
+.delivery-content {
+    @include flex-display(flex, row, center);
+	justify-content: center;
+	gap: 120px;
+    @include size(1180px, 648px);
+}
+.text-delivery {
+    @include flex-display(flex, column, center);
+	gap: 32px;
+}

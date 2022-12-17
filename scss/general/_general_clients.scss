@@ -1,0 +1,23 @@
+@import "../mixins";
+@import "../variables";
+
+.clients {
+	background: url("../src/back3.png");
+	min-height: 600px;
+	background-size: cover;
+}
+.clients-content {
+    @include flex-display(flex, column, center);
+	gap: 40px;
+	color: $light-green;
+	padding-top: 100px;
+}
+#ig-link {
+    @include font-size(600, 24px, 24px);
+	color: $light-green;
+}
+.social {
+    @include flex-display(flex, row, flex-start);
+    width: 144px;
+	justify-content: space-between;
+}

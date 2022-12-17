@@ -1,0 +1,21 @@
+@import "../mixins";
+@import "../variables";
+
+.footer-content {
+    @include flex-display(flex, column, center);
+	gap: 20px;
+	padding: 32px 0px;
+}
+.footer-links {
+    @include flex-display(flex, row, flex-start);
+	padding: 0px;
+	gap: 48px;
+}
+#footer-text {
+    @include font-size(400, 16px, 160%);
+	color: $dark-green;
+}
+#footer-link {
+    @include font-size(500, 20px, 160%);
+	color: $dark-green;
+}

@@ -1,0 +1,93 @@
+@import "../mixins";
+@import "../variables";
+
+.main {
+	background: url("../src/back1.png");
+	background-size: cover;
+    @include size(100%, 100%);
+    color: $light-green;
+}
+header {
+    @include size(100%, 82px);
+}
+.site-header {
+	max-width: 1200px;
+	margin: 0 auto; 
+    @include flex-display(flex, row, center);
+	justify-content: space-between;
+}
+#header-logo-image {
+    background: url("../src/logo1.png") no-repeat center;
+	@include size(190px, 82px);
+	margin: 20px;
+	float: left;
+}
+nav {
+	float: right;
+	padding: 24px;
+	ul {
+		li {
+			display: inline-block;
+			padding: 10px;
+			a {
+                @include font-size(500, 32px, 124%);
+				color: $light-green;
+				&:hover {
+					color: #D6DDD6;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+#menu-icon {
+	display: hidden;
+    @include size(40px, 40px);
+	background: url(https://res.cloudinary.com/dgpmuegqe/image/upload/v1492571257/nav_xe79ju.png) center;
+}
+a {
+	&:hover#menu-icon {
+		border-radius: 4px 4px 0 0;
+	}
+}
+ul {
+	list-style-type: none;
+}
+#site-func {
+    @include flex-display(flex, row, flex-start);
+    justify-content: center;
+    @include size(100px, 40px);
+	padding: 0px;
+	gap: 20px;
+}
+#user-img {
+    background: url("../src/user.svg") no-repeat center;
+	@include size(40px, 40px);
+}
+
+#cart-img {
+    background: url("../src/cart.svg") no-repeat center;
+	@include size(40px, 40px);
+}
+
+.main-content {
+	padding: 120px 0px 0px 0px;
+    @include flex-display(flex, column, flex-start);
+	gap: 48px;
+}
+
+.main-footer {
+	padding: 150px 0px 0px 0px;
+    @include flex-display(flex, row, center);
+	gap: 8px;
+}
+#scroll-down {
+    @include font-size(600, 20px, 160%);
+	color: $light-green;
+	padding-top: 8px;
+}
+#scroll {
+    @include flex-display(flex, row, center);
+    width: 270px;
+	justify-content: space-between;
+}
