@@ -1,0 +1,16 @@
+@mixin flex-display($d, $fd, $ai) {  
+    display: $d;
+    flex-direction: $fd;
+    align-items: $ai;
+}
+
+@mixin font-size($fw, $fs, $lh) {
+    font-weight: $fw;
+	font-size: $fs;
+	line-height: $lh;
+}
+
+@mixin size ($x, $y) {
+    width: $x;
+    height: $y;
+}

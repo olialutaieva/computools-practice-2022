@@ -1,0 +1,83 @@
+@import "../mixins";
+@import "../variables";
+
+@media (max-width: 768px) {
+    h3 {
+        width: 500px;
+        @include font-size(600, 24px, 120%);
+    }
+
+
+    .main-content {
+        padding: 120px 0px 0px 20px;
+    }
+
+    #site-func {
+        @include size(100px, 40px);
+        padding: 0px;
+        gap: 20px;
+    }
+    #user-img {
+        background: url("../src/user-small.png") no-repeat center;
+        @include size(28px, 28px);
+    }
+    #cart-img {
+        background: url("../src/cart-small.svg") no-repeat center;
+        @include size(28px, 28px);
+    }
+    nav {
+        ul {
+            li {
+                a {
+                    @include font-size(500, 16px, 124%);
+                }
+            }
+        }
+    }
+    #text-about-us {
+        width: 500px;
+    }
+    .delivery {
+        @include size(550px, 520px);
+    }
+    .delivery-content {
+        @include size(520px, 500px);
+    }
+    .text-delivery {
+        width: 520px;
+        text-align: center;
+        gap: 12px;
+    }
+    .delivery-img {
+        @include size(200px, 200px);
+    }
+    .clients {
+        min-height: 500px;
+    }
+    .clients-content {
+        padding-top: 90px;
+    }
+    #ig-link {
+        @include font-size(600, 20px, 24px);
+    }
+    .subsription {
+        height: 240px;
+    }
+    .subsription-content {
+        @include flex-display(flex, column, flex-start);
+        justify-content: space-between;
+        padding: 30px 20px;
+        width: 560px;
+        height: 240px;
+    }
+    .subsription-row {
+        @include flex-display(flex, column, flex-start);
+        width: 520px;
+    }
+    .input-row {
+        box-sizing: border-box;
+        @include flex-display(flex, row, center);
+        padding: 0px;
+    }
+}
+

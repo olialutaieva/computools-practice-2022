@@ -1,0 +1,97 @@
+@import "../mixins";
+@import "../variables";
+
+@media (max-width: 1200px) {
+    h1 {
+        @include font-size(700, 48px, 124%);
+    }
+    h2 {
+        @include font-size(700, 32px, 120%);
+    }
+    h3 {
+        width: 580px;
+        @include font-size(600, 24px, 120%);
+    }
+    h4 {
+        @include font-size(700, 20px, 124%);
+    }
+    p {
+        @include font-size(500, 20px, 160%);
+    }
+    .main {
+        min-height: 820px;
+    }
+    header {
+        @include size(100%, 82px);
+    }
+    .site-header {
+        max-width: 900px;
+    }
+    nav {
+        ul {
+            li {
+                a {
+                    @include font-size(500, 24px, 124%);
+                }
+            }
+        }
+    }
+    .main-footer {
+        padding: 100px 0px 0px 0px;
+    }
+    .about-us {
+        background: url("../src/back-1200.png");
+        background-size: cover;
+        min-height: 820px;
+    }
+    .about-us-content {
+        padding-top: 48px;
+        padding-left: 32px;
+    }
+    #text-about-us {
+        width: 680px;
+    }
+    .delivery {
+        background: $white;
+        @include size(1024px, 720px);
+        @include flex-display(flex, column, flex-start);
+        justify-content: space-between;
+        padding: 0px;
+    }
+    .delivery-content {
+        @include flex-display(flex, column-reverse, center);
+        @include size(920px, 720px);
+        margin: 0px;
+        gap: 0px;
+    }
+    .text-delivery {
+        width: 680px;
+        text-align: center;
+    }
+    .delivery-img {
+        @include size(240px, 240px);
+    }
+    .clients {
+        min-height: 500px;
+    }
+    .clients-content {
+        padding-top: 90px;
+    }
+    #ig-link {
+        @include font-size(600, 20px, 24px);
+    }
+    .subsription {
+        height: 224px;
+    }
+    .subsription-content {
+        @include flex-display(flex, row, flex-start);
+        justify-content: space-between;
+        padding: 30px 30px;
+        width: 820px;
+    }
+    .subsription-row {
+        @include flex-display(flex, column, flex-start);
+        width: 360px;
+    }
+}
+
